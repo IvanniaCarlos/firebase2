@@ -1,14 +1,14 @@
 const loggedOutlinks = document.querySelectorAll('.logged-out');
-const loggedIntlinks = document.querySelectorAll('.logged-in');
+const loggedInlinks = document.querySelectorAll('.logged-in');
 
-export const loginCHECK = user => {
+export const loginCheck = user => {
     //si el usuario existe ocultamos las bonotes necesarios
    if (user){
-    loggedIntlinks.forEach(link => link.style.display = 'block');
+    loggedInlinks.forEach(link => link.style.display = 'block');
     loggedOutlinks.forEach(link => link.style.display = 'none');
    }
 else {
-    loggedIntlinks.forEach(link => link.style.display = 'none');
+    loggedInlinks.forEach(link => link.style.display = 'none');
     loggedOutlinks.forEach(link => link.style.display = 'block');
-}
+    }
 }

@@ -7,5 +7,4 @@ const logout = document.getElementById('logout');
 logout.addEventListener('click',async () => {
    await signOut(auth);
    showMessage('logged out', 'green');
-
 });
