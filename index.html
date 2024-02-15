@@ -31,6 +31,19 @@
         </div>
       </nav>
     <h1>Autenticación con Firebase</h1>
+
+    <div id="posts-container">
+      <div id="create-task">
+        <form id="create-form">
+          <label for="task-title">title:</label>
+          <input type="text"  id="task-title"/>
+          <label for="task-content">content:</label>
+          <textarea id="task-content" cols="30" rows="5"></textarea>
+          <button type="submit">create-task</button>
+       </form>
+      </div>
+    </div>
+  
     <!-- Signin modal -->
     <div class="modal fade" id="signin-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -45,8 +58,10 @@
                         <input id="email-signin" type="email" class="form-control mb-3" placeholder="Email" required>
                         <label for="password-signin" class="mb-1">Password</label>
                         <input id="password-signin" type="password" class="form-control mb-3" placeholder="******" required>
-                        <button type="submit" class="btn btn-primary">Login</button>
-                    </form>
+                        <button type="submit" class="btn btn-primary form-control mb-2">login</button>
+                        </hr>
+                        <button id="google-login" class="btn btn-info">google</button>
+                      </form>
                 </div>
             </div>
         </div>
