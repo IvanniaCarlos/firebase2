@@ -9,7 +9,8 @@
     <link href="assets/css/styles.css" />
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">FireApp</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,18 +32,23 @@
         </div>
       </nav>
     <h1>Autenticación con Firebase</h1>
-
-    <div id="posts-container">
-      <div id="create-task">
-        <form id="create-form">
-          <label for="task-title">title:</label>
-          <input type="text"  id="task-title"/>
-          <label for="task-content">content:</label>
-          <textarea id="task-content" cols="30" rows="5"></textarea>
-          <button type="submit">create-task</button>
-       </form>
+    <main row ></main>
+    <main class="row w-75 mx-auto">
+      <div class="col-md-6" id="task-form-container">
+        <div id="create-tasks">
+          <form id="create-form">
+            <label for="task-title">Title:</label>
+            <input type="text" id="task-title" />
+            <label for="task-content">Content:</label>
+            <textarea id="task-content" cols="30" rows="5"></textarea>
+            <button type="submit">Create Task</button>
+          </form>
+        </div>
       </div>
-    </div>
+  
+      <!-- Acá se mostrarán las tasks de la base de datos -->
+      <div class="col-md-6" id="tasks-container"></div>
+    </main>
   
     <!-- Signin modal -->
     <div class="modal fade" id="signin-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
