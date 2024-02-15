@@ -1,4 +1,4 @@
-import { createTask, onGetTask } from "./firebase.js";
+import { createTask, deleteTaks, onGetTask } from "./firebase.js";
 
 const taskForm = document.getElementById("create-form");
 const tasksContainer = document.getElementById("tasks-container");
@@ -30,7 +30,7 @@ window.addEventListener("DOMContentLoaded", () => {
          const dtnsDelete = document.querySelector(".btn-delete-custom");
 
          btnsDelete.forEach(btn => {
-             btn.addEventListener("click");
+             btn.addEventListener("click"); ({target: { dataset}}) => deleteTaks(dataset);
          })
     });
 });
